@@ -8,14 +8,10 @@ sudo apt-get install -y git
 sudo apt-get install -y curl
 curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 
-
 # Load nvm and install latest (May 2016) production node
 source $HOME/.nvm/nvm.sh
 nvm install v4.4.5
 nvm use v4.4.5
-
-# install ruby and Rails
-curl -sL https://raw.github.com/kerlin/AWSUbuntuRails/master/setup.sh | sh
 
 # Install jshint to allow checking of JS code within emacs
 # http://jshint.com/
@@ -49,4 +45,7 @@ ln -sb dotfiles/.bash_profile .
 ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.bashrc_custom .
 ln -sf dotfiles/.emacs.d .
+
+# install ruby and Rails
+curl -sL https://raw.github.com/kerlin/AWSUbuntuRails/master/setup.sh | sh
 
