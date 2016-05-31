@@ -6,6 +6,7 @@ follows:
 
 ```sh
 cd $HOME
+sudo apt-get update
 sudo apt-get install -y git-core
 git clone https://github.com/kerlin/setup.git
 ./setup/setup.sh   
