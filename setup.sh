@@ -1,5 +1,5 @@
 #!/bin/bash
-# Simple setup.sh for configuring Ubuntu 12.04 LTS EC2 instance
+# Simple setup.sh for configuring Ubuntu 14.04 LTS EC2 instance
 # for headless setup. 
 
 # Install nvm: node-version manager
@@ -8,10 +8,14 @@ sudo apt-get install -y git
 sudo apt-get install -y curl
 curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 
-# Load nvm and install latest production node
+
+# Load nvm and install latest (May 2016) production node
 source $HOME/.nvm/nvm.sh
-nvm install v0.10.12
-nvm use v0.10.12
+nvm install v4.4.5
+nvm use v4.4.5
+
+# install ruby and Rails
+curl -sL https://raw.github.com/kerlin/AWSUbuntuRails/master/setup.sh | sh
 
 # Install jshint to allow checking of JS code within emacs
 # http://jshint.com/
@@ -39,7 +43,7 @@ fi
 if [ -d .emacs.d/ ]; then
     mv .emacs.d .emacs.d~
 fi
-git clone https://github.com/startup-class/dotfiles.git
+git clone https://github.com/kerlin/dotfiles.git
 ln -sb dotfiles/.screenrc .
 ln -sb dotfiles/.bash_profile .
 ln -sb dotfiles/.bashrc .
