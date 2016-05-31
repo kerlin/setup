@@ -47,5 +47,5 @@ ln -sb dotfiles/.bashrc_custom .
 ln -sf dotfiles/.emacs.d .
 
 # install ruby and Rails
-curl -sL https://raw.github.com/kerlin/AWSUbuntuRails/master/setup.sh | sh
+curl https://raw.github.com/kerlin/AWSUbuntuRails/master/setup.sh | sh
 
