@@ -6,7 +6,7 @@
 # https://github.com/creationix/nvm
 sudo apt-get install -y git
 sudo apt-get install -y curl
-curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+curl -L https://raw.github.com/creationix/nvm/master/install.sh | sh
 
 # Load nvm and install latest (May 2016) production node
 source $HOME/.nvm/nvm.sh
@@ -47,5 +47,5 @@ ln -sb dotfiles/.bashrc_custom .
 ln -sf dotfiles/.emacs.d .
 
 # install ruby and Rails
-curl https://raw.github.com/kerlin/AWSUbuntuRails/master/setup.sh | sh
+curl -L https://raw.github.com/kerlin/AWSUbuntuRails/master/setup.sh | sh
 
