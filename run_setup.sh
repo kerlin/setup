@@ -1,4 +1,4 @@
-# curl -L https://raw.github.com/kerlin/setup/my_setup/run_setup.sh | sh
+# curl -L https://raw.github.com/kerlin/setup/my_setup/run_setup.sh | sh; . ~/.bash_profile
 cd $HOME
 sudo apt-get update
 sudo apt-get install -y tree
