@@ -5,7 +5,7 @@ configure both the machine and your individual development environment as
 follows:
 
 ```sh
-curl -L https://raw.github.com/kerlin/setup/my_setup/run_setup.sh | sh
+curl -L https://raw.github.com/kerlin/setup/my_setup/run_setup.sh | sh; . ~/.bash_profile
 
 OR
 
